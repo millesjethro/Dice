@@ -101,4 +101,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dice3"
         app:layout_constraintVertical_bias="0.095" />
+
+    <EditText
+        android:id="@+id/Nameoftheroller"
+        android:layout_width="196dp"
+        android:layout_height="48dp"
+        android:autofillHints="hello"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="@string/name_of_the_roller"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.692" />
 </androidx.constraintlayout.widget.ConstraintLayout>

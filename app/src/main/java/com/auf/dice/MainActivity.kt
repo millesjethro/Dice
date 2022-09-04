@@ -2,12 +2,10 @@ package com.auf.dice
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.CheckBox
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -20,9 +18,7 @@ class MainActivity : AppCompatActivity() {
         val luck2 = findViewById<TextView>(R.id.lon2)
         val luck3 = findViewById<TextView>(R.id.lon3)
         val check = findViewById<CheckBox>(R.id.checkBox)
-        var checker1: Boolean = false
-        var checker2: Boolean = false
-        var checker3: Boolean = false
+        val name = findViewById<EditText>(R.id.Nameoftheroller)
             rollbtn.setOnClickListener {
             val die = Dice()
 
@@ -33,37 +29,31 @@ class MainActivity : AppCompatActivity() {
 
             if(die.lnum1){
                 luck1.text = "Not"
-                checker1 = false
             }
             else{
                 luck1.text = "Lucky"
-                checker1 = true
             }
 
             if(die.lnum2){
                 luck2.text = "Not"
-                checker2 = true
             }
             else{
                 luck2.text = "Lucky"
-                checker2 = true
             }
 
             if(die.lnum3){
                 luck3.text = "Not"
-                checker3 = true
             }
             else{
                 luck3.text = "lucky"
-                checker3 = true
             }
 
             if(check.isChecked){
-                 if(!checker1 && !checker2 && !checker3){
-                    var toast = Toast.makeText(applicationContext, "You Won",Toast.LENGTH_SHORT)
+                 if(!die.lnum1 && !die.lnum2 && !die.lnum2){
+                    var toast = Toast.makeText(applicationContext, "You Won "+name.text,Toast.LENGTH_SHORT)
                     toast.show()
                  } else {
-                    var toast = Toast.makeText(applicationContext, "You Lose",Toast.LENGTH_SHORT)
+                    var toast = Toast.makeText(applicationContext, "You Lose "+name.text,Toast.LENGTH_SHORT)
                     toast.show()
                 }
             }
