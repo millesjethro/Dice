@@ -10,4 +10,7 @@
     <string name="l_or_n2">L or N</string>
     <string name="enable_lucky_mode">Enable Lucky Mode</string>
     <string name="name_of_the_roller">Name of The Roller</string>
+    <string name = "Dicee1">Dice 1:</string>
+    <string name = "Dicee2">Dice 2:</string>
+    <string name = "Dicee3">Dice 3:</string>
 </resources>

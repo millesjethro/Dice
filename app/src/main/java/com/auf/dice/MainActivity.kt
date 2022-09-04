@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
             rollbtn.setOnClickListener {
             val die = Dice()
 
-            dices1.text = "Dice 1: "+die.dice1.toString()
+                dices1.text = "Dice 1: "+die.dice1.toString()
             dices2.text = "Dice 2: "+die.dice2.toString()
             dices3.text = "Dice 3: "+die.dice3.toString()
 
