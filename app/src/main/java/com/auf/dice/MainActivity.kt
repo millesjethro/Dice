@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             if(check.isChecked){
-                 if(!die.lnum1 && !die.lnum2 && !die.lnum2){
+                 if(!die.lnum1 && !die.lnum2 && !die.lnum3){
                     var toast = Toast.makeText(applicationContext, "You Won "+name.text,Toast.LENGTH_SHORT)
                     toast.show()
                  } else {
