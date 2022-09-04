@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Dice</string>
+    <string name="dice_1">Dice 1:</string>
+    <string name="dice_2">Dice 2:</string>
+    <string name="dice_3">Dice 3:</string>
+    <string name="checkbox">CheckBox</string>
+    <string name="roll">Roll</string>
+    <string name="l_or_n">L or N</string>
+    <string name="l_or_n3">L or N</string>
+    <string name="l_or_n2">L or N</string>
+</resources>
